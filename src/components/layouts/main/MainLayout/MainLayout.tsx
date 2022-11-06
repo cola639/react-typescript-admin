@@ -11,7 +11,7 @@ import {References} from '@app/components/common/References/References'
 
 const MainLayout: React.FC = () => {
     const [isTwoColumnsLayout, setIsTwoColumnsLayout] = useState(true)
-    const [siderCollapsed, setSiderCollapsed] = useState(true)
+    const [siderCollapsed, setSiderCollapsed] = useState(false)
     const {isDesktop} = useResponsive()
     const location = useLocation()
 

@@ -76,6 +76,7 @@ export const SiderLogoDiv = styled.div`
     display: flex;
     justify-content: space-between;
     align-items: center;
+    position: relative;
 
     ${`@media only screen and ${media.md}`} {
         height: ${LAYOUT.desktop.headerHeight};
