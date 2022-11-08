@@ -1,6 +1,6 @@
 import {createAction, createSlice, PrepareAction} from '@reduxjs/toolkit'
 import {UserModel} from '@app/domain/UserModel' // user model
-import {persistUser, readUser} from '@app/services/localStorage.service'
+import {persistUser, readUser} from '@app/services/localStorage'
 
 export interface UserState {
     user: UserModel | null

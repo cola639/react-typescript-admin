@@ -12,7 +12,7 @@ import {
     setNewPassword,
 } from '@app/api/auth.api'
 import {setUser} from '@app/store/slices/userSlice'
-import {deleteToken, deleteUser, persistToken, readToken} from '@app/services/localStorage.service'
+import {deleteToken, deleteUser, persistToken, readToken} from '@app/services/localStorage'
 
 export interface AuthSlice {
     token: string | null
