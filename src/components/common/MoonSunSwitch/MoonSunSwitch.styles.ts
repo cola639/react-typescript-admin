@@ -3,7 +3,7 @@ import {Button} from 'components/common/buttons/Button/Button'
 import styled, {css} from 'styled-components'
 
 interface BtnProps {
-    $isFirstActive: boolean
+    theme: string
 }
 
 export const Btn = styled(Button)`
@@ -25,20 +25,35 @@ export const ButtonGroup = styled.div<BtnProps>`
 
     background-color: rgba(var(--primary-rgb-color), 0.1);
 
-    ${props =>
-        props.$isFirstActive
-            ? css`
-                  & > ${Btn}:first-of-type {
-                      background: var(--primary-color);
-                      color: var(--text-secondary-color);
-                  }
-              `
-            : css`
-                  & > ${Btn}:last-of-type {
-                      background: var(--warning-color);
-                      color: var(--text-secondary-color);
-                  }
-              `}
+    ${props => {
+        switch (props.theme) {
+            case 'dark':
+                return css`
+                    & > ${Btn}:nth-of-type(1) {
+                        background: var(--primary-color);
+                        color: var(--text-secondary-color);
+                    }
+                `
+            case 'star':
+                return css`
+                    & > ${Btn}:nth-of-type(2) {
+                        background: var(--warning-color);
+                        color: var(--text-secondary-color);
+                    }
+                `
+
+            case 'light':
+                return css`
+                    & > ${Btn}:nth-of-type(3) {
+                        background: var(--warning-color);
+                        color: var(--text-secondary-color);
+                    }
+                `
+
+            default:
+                return ''
+        }
+    }}
 
     &:not(:last-of-type) {
         margin-bottom: 0.625rem;

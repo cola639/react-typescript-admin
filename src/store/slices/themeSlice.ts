@@ -26,6 +26,7 @@ export const themeSlice = createSlice({
     reducers: {},
     extraReducers: builder => {
         builder.addCase(setTheme, (state, action) => {
+            console.log('🚀TCL: >> builder.addCase >> action.payload', action.payload)
             state.theme = action.payload
         })
     },

@@ -10,15 +10,18 @@ export const ThemePicker: React.FC = () => {
     const theme = useAppSelector(state => state.theme.theme)
 
     const handleClickButton = (theme: ThemeType) => {
+        console.log('🚀TCL: >> handleClickButton >> theme', theme)
+
         dispatch(setTheme(theme))
-        dispatch(setNightMode(false))
+        dispatch(setNightMode(false)) // close NightMode timer
     }
 
     return (
         <MoonSunSwitch
-            isMoonActive={theme === 'dark'}
+            themeActive={theme}
             onClickMoon={() => handleClickButton('dark')}
             onClickSun={() => handleClickButton('light')}
+            onClickStar={() => handleClickButton('star')}
         />
     )
 }

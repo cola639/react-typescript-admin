@@ -8,7 +8,7 @@ export type xData = number[] | string[]
 
 export type LanguageType = 'de' | 'en'
 
-export type ThemeType = 'light' | 'dark'
+export type ThemeType = 'light' | 'dark' | 'star'
 
 export interface ChartSeries {
     seriesName: string

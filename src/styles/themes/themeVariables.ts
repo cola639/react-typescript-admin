@@ -4,10 +4,12 @@ import {css} from 'styled-components'
 import {BASE_COLORS} from './constants'
 import {darkColorsTheme, antDarkColorsTheme} from './dark/darkTheme'
 import {lightColorsTheme} from './light/lightTheme'
+import {starColorsTheme} from './star/starTheme'
 
 export const themeObject = {
     light: lightColorsTheme,
     dark: darkColorsTheme,
+    star: starColorsTheme,
 }
 
 export const antThemeObject = {
@@ -109,6 +111,9 @@ export const darkThemeVariables = css`
     ${getThemeVariables('dark')}
     --ant-success-color-deprecated-bg: ${antThemeObject['dark'].successBg} !important;
     --ant-success-color-deprecated-border: ${antThemeObject['dark'].successBorder} !important;
+`
+export const starThemeVariables = css`
+    ${getThemeVariables('star')}
 `
 
 export const commonThemeVariables = css`
