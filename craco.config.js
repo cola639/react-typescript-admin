@@ -43,6 +43,7 @@ module.exports = {
             },
         },
     },
+
     plugins: [
         {
             plugin: CracoAlias,
@@ -56,6 +57,7 @@ module.exports = {
             },
         },
     ],
+
     babel: {
         plugins: [
             // AntDesign 按需加载
@@ -78,15 +80,16 @@ module.exports = {
             ],
         ],
     },
-    devServer: {
-        // proxy: {
-        //     '/api': {
-        //         target: 'http://XXXXXXXX:8888',
-        //         changeOrigin: true,
-        //         pathRewrite: {
-        //             '^/api': '',
-        //         },
-        //     },
-        // },
-    },
+
+    // devServer: {
+    //     proxy: {
+    //         '/api': {
+    //             target: 'http://XXXXXXXX:8888',
+    //             changeOrigin: true,
+    //             pathRewrite: {
+    //                 '^/api': '',
+    //             },
+    //         },
+    //     },
+    // },
 }
