@@ -7,7 +7,7 @@ export const BaseFormTitle = styled(Typography.Text)`
     font-size: 1rem;
     display: block;
 
-    @media only screen and ${media.md} {
+    ${`@media only screen and ${media.md}`} {
         font-size: 1.125rem;
     }
 `

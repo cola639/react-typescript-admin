@@ -18,7 +18,7 @@ const BuyButton = styled(Button)`
         margin-top: 1rem;
     }
 
-    @media only screen and ${media.md} {
+    ${`@media only screen and ${media.md}`} {
         margin-top: 0;
     }
 `

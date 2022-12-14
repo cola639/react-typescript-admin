@@ -57,7 +57,7 @@ export const InfoHeader = styled.div`
     display: flex;
     margin-bottom: 1rem;
 
-    @media only screen and ${media.md} {
+    ${`@media only screen and ${media.md}`} {
         margin-bottom: 0.625rem;
     }
 
@@ -74,7 +74,7 @@ export const Title = styled.div`
 
     color: var(--text-main-color);
 
-    @media only screen and ${media.md} {
+    ${`@media only screen and ${media.md}`} {
         font-size: ${FONT_SIZE.xxl};
     }
 `

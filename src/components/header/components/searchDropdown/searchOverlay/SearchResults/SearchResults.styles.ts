@@ -12,7 +12,7 @@ export const SearchResultsWrapper = styled.div`
 
             color: var(--primary-color);
 
-            @media only screen and ${media.md} {
+            ${`@media only screen and ${media.md}`} {
                 font-size: 0.875rem;
             }
         }

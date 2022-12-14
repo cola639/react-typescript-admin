@@ -27,7 +27,7 @@ export const FilterWrapper = styled.div<FilterWrapperProps>`
 export const CheckBox = styled(Checkbox)`
     font-size: 0.75rem;
 
-    @media only screen and ${media.md} {
+    ${`@media only screen and ${media.md}`} {
         font-size: 0.875rem;
     }
 `

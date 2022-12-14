@@ -11,7 +11,7 @@ export const LoginDescription = styled.div`
         font-weight: ${FONT_WEIGHT.bold};
     }
 
-    @media only screen and ${media.md} {
+    ${`@media only screen and ${media.md}`} {
         margin-bottom: 1.75rem;
         font-weight: ${FONT_WEIGHT.regular};
     }

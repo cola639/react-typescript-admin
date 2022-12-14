@@ -44,7 +44,7 @@ export const LegendTitle = styled.div`
         font-size: ${FONT_SIZE.xs};
     }
 
-    @media only screen and ${media.md} {
+    ${`@media only screen and ${media.md}`} {
         font-size: ${FONT_SIZE.md};
     }
 `
@@ -66,7 +66,7 @@ export const Values = styled.div`
     margin-left: 0.5rem;
     color: var(--primary-color);
 
-    @media only screen and ${media.md} {
+    ${`@media only screen and ${media.md}`} {
         margin-left: 1.5rem;
     }
 `

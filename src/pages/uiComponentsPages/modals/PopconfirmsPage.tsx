@@ -13,7 +13,7 @@ const AsyncButton = styled(Button)`
     @media only screen and ${media.xs} {
         font-size: ${FONT_SIZE.xs};
     }
-    @media only screen and ${media.md} {
+    ${`@media only screen and ${media.md}`} {
         font-size: ${FONT_SIZE.md};
     }
 `

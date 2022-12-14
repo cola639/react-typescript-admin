@@ -7,11 +7,11 @@ export const LayoutMaster = styled(Layout)`
 `
 
 export const LayoutMain = styled(Layout)`
-    @media only screen and ${media.md} {
+    ${`${`@media only screen and ${media.md}`}`} {
         margin-left: 80px;
     }
 
-    @media only screen and ${media.xl} {
+    ${`@media only screen and ${media.xl}`} {
         margin-left: unset;
     }
 `

@@ -23,7 +23,7 @@ export const BaseFormItem = styled(Form.Item)<FormItemProps>`
             font-size: 1.25rem;
         }
 
-        @media only screen and ${media.md} {
+        ${`@media only screen and ${media.md}`} {
             width: 5.5rem;
             font-size: 1.125rem;
         }

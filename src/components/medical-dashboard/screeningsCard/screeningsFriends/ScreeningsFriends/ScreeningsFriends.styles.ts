@@ -14,7 +14,7 @@ export const Wrapper = styled.div<WrapperProps>`
 
     box-shadow: var(--box-shadow);
 
-    @media only screen and ${media.md} {
+    ${`@media only screen and ${media.md}`} {
         padding: 1.25rem;
 
         margin: ${dashboardPaddings.md[0]}px ${dashboardPaddings.md[1]}px;

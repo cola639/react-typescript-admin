@@ -11,7 +11,7 @@ interface MainSiderProps {
 }
 
 const MainSider: React.FC<MainSiderProps> = ({isCollapsed, setCollapsed, ...props}) => {
-    const {isDesktop, mobileOnly, tabletOnly, desktopOnly} = useResponsive()
+    const {mobileOnly, tabletOnly, desktopOnly} = useResponsive()
 
     const isCollapsible = useMemo(() => mobileOnly && tabletOnly, [mobileOnly, tabletOnly])
 

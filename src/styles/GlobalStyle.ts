@@ -47,7 +47,7 @@ export default createGlobalStyle`
     max-width: 600px;
     }
 
-    @media only screen and ${media.md} {
+    ${`@media only screen and ${media.md}`} {
       max-width: 323px;
     }
   }

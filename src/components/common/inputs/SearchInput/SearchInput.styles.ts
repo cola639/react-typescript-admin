@@ -22,7 +22,7 @@ export const SearchInput = styled(Search)`
         font-weight: 600;
         background-color: var(--background-color);
 
-        @media only screen and ${media.md} {
+        ${`@media only screen and ${media.md}`} {
             font-size: 1rem;
         }
 

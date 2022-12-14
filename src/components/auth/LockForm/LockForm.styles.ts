@@ -16,7 +16,7 @@ export const AvatarCircle = styled.div`
         width: 3.6875rem;
     }
 
-    @media only screen and ${media.md} {
+    ${`@media only screen and ${media.md}`} {
         height: 4.8125rem;
         width: 4.8125rem;
     }
@@ -39,7 +39,7 @@ export const Time = styled.div`
         font-weight: ${FONT_WEIGHT.bold};
     }
 
-    @media only screen and ${media.md} {
+    ${`@media only screen and ${media.md}`} {
         margin-bottom: 1rem;
         line-height: 2.125rem;
         font-size: ${FONT_SIZE.xxxl};
@@ -58,7 +58,7 @@ export const Date = styled.div`
         font-weight: ${FONT_WEIGHT.semibold};
     }
 
-    @media only screen and ${media.md} {
+    ${`@media only screen and ${media.md}`} {
         margin-bottom: 2.5rem;
         line-height: 1.5rem;
         font-size: ${FONT_SIZE.xxl};
@@ -75,7 +75,7 @@ export const Name = styled.div`
         font-weight: ${FONT_WEIGHT.semibold};
     }
 
-    @media only screen and ${media.md} {
+    ${`@media only screen and ${media.md}`} {
         font-size: ${FONT_SIZE.md};
     }
 `

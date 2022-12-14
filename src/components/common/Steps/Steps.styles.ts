@@ -11,7 +11,7 @@ export const Steps = styled(AntdSteps)`
         font-size: ${FONT_SIZE.xs};
         /* width: 100%; */
 
-        @media only screen and ${media.md} {
+        ${`@media only screen and ${media.md}`} {
             font-size: ${FONT_SIZE.md};
         }
     }
@@ -22,7 +22,7 @@ export const Steps = styled(AntdSteps)`
         font-size: ${FONT_SIZE.xs};
         /* width: 100%; */
 
-        @media only screen and ${media.md} {
+        ${`@media only screen and ${media.md}`} {
             font-size: ${FONT_SIZE.md};
         }
     }

@@ -33,7 +33,7 @@ export const CodeInput = styled(VerificationInput)`
         }
     }
 
-    @media only screen and ${media.md} {
+    ${`@media only screen and ${media.md}`} {
         gap: 0.625rem;
         .character {
             width: 3.4375rem;

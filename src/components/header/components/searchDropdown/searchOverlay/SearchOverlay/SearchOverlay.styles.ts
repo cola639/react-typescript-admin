@@ -7,7 +7,7 @@ export const Menu = styled(DropdownMenu)`
     max-height: 50vh;
     overflow-y: auto;
 
-    @media only screen and ${media.md} {
+    ${`@media only screen and ${media.md}`} {
         padding: 1rem 2rem;
     }
 `

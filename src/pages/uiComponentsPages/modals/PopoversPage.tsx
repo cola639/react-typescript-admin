@@ -21,7 +21,7 @@ export const TopButtons = styled(PopoverButton)`
         margin-left: ${buttonWidth - 24}px;
     }
 
-    @media only screen and ${media.md} {
+    ${`@media only screen and ${media.md}`} {
         margin-left: ${buttonWidth + 18}px;
     }
 `
@@ -39,7 +39,7 @@ export const RightButtons = styled(PopoverButton)`
         margin-left: ${buttonWidth * 3 - 14}px;
     }
 
-    @media only screen and ${media.md} {
+    ${`@media only screen and ${media.md}`} {
         margin-left: ${buttonWidth * 4}px;
     }
 `
@@ -52,7 +52,7 @@ export const BottomButtons = styled(PopoverButton)`
         margin-left: ${buttonWidth - 44}px;
     }
 
-    @media only screen and ${media.md} {
+    ${`@media only screen and ${media.md}`} {
         margin-left: ${buttonWidth}px;
     }
 `

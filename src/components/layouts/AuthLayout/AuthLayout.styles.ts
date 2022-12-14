@@ -44,7 +44,7 @@ export const FormWrapper = styled.div`
         max-height: calc(100vh - 3rem);
     }
 
-    @media only screen and ${media.md} {
+    ${`@media only screen and ${media.md}`} {
         padding: 2.5rem;
         width: 31.75rem;
         max-height: calc(100vh - 3rem);
@@ -61,7 +61,7 @@ export const FormTitle = styled.div`
         line-height: 1.5625rem;
     }
 
-    @media only screen and ${media.md} {
+    ${`@media only screen and ${media.md}`} {
         margin-bottom: 0.875rem;
         font-size: ${FONT_SIZE.xxl};
         font-weight: ${FONT_WEIGHT.bold};
@@ -191,7 +191,7 @@ export const SocialIconWrapper = styled.div`
         margin-right: 0.625rem;
     }
 
-    @media only screen and ${media.md} {
+    ${`@media only screen and ${media.md}`} {
         margin-right: 0.8125rem;
     }
 `

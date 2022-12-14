@@ -16,7 +16,7 @@ export const Col = styled.div`
 
     border-bottom: 1px solid rgba(var(--primary-rgb-color), 0.3);
 
-    @media only screen and ${media.md} {
+    ${`@media only screen and ${media.md}`} {
         justify-content: unset;
         font-size: 1rem;
         padding: 0.5rem;

@@ -19,7 +19,7 @@ const FormItem = styled(Form.Item)`
         max-width: fit-content;
     }
 
-    @media only screen and ${media.md} {
+    ${`@media only screen and ${media.md}`} {
         max-width: 100%;
     }
 `

@@ -10,7 +10,7 @@ export const Kanban = styled(Board)`
 
     margin: 0 -${LAYOUT.mobile.paddingHorizontal};
 
-    @media only screen and ${media.md} {
+    ${`@media only screen and ${media.md}`} {
         padding: 0 ${LAYOUT.desktop.paddingHorizontal};
         margin: 0 -${LAYOUT.desktop.paddingHorizontal};
     }

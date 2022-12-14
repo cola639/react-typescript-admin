@@ -43,7 +43,7 @@ export const InfoRow = styled.div`
         }
     }
 
-    @media only screen and ${media.md} {
+    ${`@media only screen and ${media.md}`} {
         margin-bottom: 0.25rem;
     }
 

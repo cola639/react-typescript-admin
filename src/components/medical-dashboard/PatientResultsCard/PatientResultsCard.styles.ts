@@ -15,7 +15,7 @@ export const TitleWrapper = styled.div`
 export const CalendarIcon = styled(CalendarOutlined)`
     color: var(--primary-color);
 
-    @media only screen and ${media.md} {
+    ${`@media only screen and ${media.md}`} {
         color: var(--text-main-color);
     }
 `
@@ -44,7 +44,7 @@ export const Text = styled(Typography.Text)`
     font-size: ${FONT_SIZE.xxs};
     color: var(--text-main-color);
 
-    @media only screen and ${media.md} {
+    ${`@media only screen and ${media.md}`} {
         font-size: ${FONT_SIZE.xs};
     }
 `
@@ -53,7 +53,7 @@ export const Description = styled(Typography.Text)`
     margin-top: 0.625rem;
     font-size: ${FONT_SIZE.xxs};
 
-    @media only screen and ${media.md} {
+    ${`@media only screen and ${media.md}`} {
         font-size: ${FONT_SIZE.xs};
     }
 `

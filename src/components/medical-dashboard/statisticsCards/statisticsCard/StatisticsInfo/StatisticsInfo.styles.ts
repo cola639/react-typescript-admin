@@ -6,7 +6,7 @@ export const Title = styled(Typography.Text)`
     font-size: ${FONT_SIZE.xs};
     font-weight: ${FONT_WEIGHT.bold};
 
-    @media only screen and ${media.md} {
+    ${`@media only screen and ${media.md}`} {
         font-size: ${FONT_SIZE.md};
     }
 

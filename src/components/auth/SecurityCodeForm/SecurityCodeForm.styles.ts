@@ -15,7 +15,7 @@ export const VerifyEmailDescription = styled.div`
         font-size: ${FONT_SIZE.xxs};
     }
 
-    @media only screen and ${media.md} {
+    ${`@media only screen and ${media.md}`} {
         font-size: ${FONT_SIZE.xs};
     }
 `

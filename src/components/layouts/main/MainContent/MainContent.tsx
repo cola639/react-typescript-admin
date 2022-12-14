@@ -15,7 +15,7 @@ export default styled(Content)<HeaderProps>`
     flex-direction: column;
     justify-content: space-between;
 
-    @media only screen and ${media.md} {
+    ${`@media only screen and ${media.md}`} {
         padding: ${LAYOUT.desktop.paddingVertical} ${LAYOUT.desktop.paddingHorizontal};
     }
 

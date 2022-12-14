@@ -105,7 +105,7 @@ export const Text = styled(Typography.Text)`
 
     color: var(--text-main-color);
 
-    @media only screen and ${media.md} {
+    ${`@media only screen and ${media.md}`} {
         text-align: center;
     }
 

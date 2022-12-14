@@ -11,7 +11,7 @@ export const Wrapper = styled.div`
 
     background-color: var(--background-color);
 
-    @media only screen and ${media.md} {
+    ${`@media only screen and ${media.md}`} {
         padding: 2.5rem 6.25rem 6.25rem;
     }
 
@@ -47,7 +47,7 @@ export const Title = styled(Typography.Text)`
 
     color: var(--text-main-color);
 
-    @media only screen and ${media.md} {
+    ${`@media only screen and ${media.md}`} {
         font-size: 3rem;
         margin-bottom: 1.75rem;
     }
@@ -62,7 +62,7 @@ export const Text = styled(Title)`
     font-size: 0.875rem;
     margin-bottom: 1.25rem;
 
-    @media only screen and ${media.md} {
+    ${`@media only screen and ${media.md}`} {
         font-size: 1.12rem;
         margin-bottom: 1.45rem;
     }

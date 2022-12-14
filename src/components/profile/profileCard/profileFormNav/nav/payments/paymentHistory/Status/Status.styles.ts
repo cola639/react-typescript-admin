@@ -10,7 +10,7 @@ export const StatusTag = styled(Tag)`
     justify-content: center;
     margin: 0;
 
-    @media only screen and ${media.md} {
+    ${`@media only screen and ${media.md}`} {
         min-width: 6.5rem;
     }
 `

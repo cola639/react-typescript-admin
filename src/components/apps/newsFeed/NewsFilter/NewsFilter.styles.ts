@@ -134,7 +134,7 @@ export const NewsWrapper = styled.div`
         width: 100%;
     }
 
-    @media only screen and ${media.md} {
+    ${`@media only screen and ${media.md}`} {
         width: calc(100% - 21.25rem);
     }
 `
@@ -155,7 +155,7 @@ export const FilterWrapper = styled.div`
         position: relative;
     }
 
-    @media only screen and ${media.md} {
+    ${`@media only screen and ${media.md}`} {
         position: sticky;
     }
 `

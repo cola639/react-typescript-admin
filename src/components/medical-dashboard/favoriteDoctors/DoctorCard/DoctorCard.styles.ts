@@ -14,7 +14,7 @@ export const Title = styled(Typography.Text)`
 
     color: var(--primary-color);
 
-    @media only screen and ${media.md} {
+    ${`@media only screen and ${media.md}`} {
         font-size: ${FONT_SIZE.xs};
     }
 
@@ -28,7 +28,7 @@ export const Text = styled(Typography.Text)`
 
     font-weight: ${FONT_WEIGHT.semibold};
 
-    @media only screen and ${media.md} {
+    ${`@media only screen and ${media.md}`} {
         font-size: ${FONT_SIZE.md};
     }
 
@@ -53,7 +53,7 @@ export const Rating = styled(Rate)`
     display: flex;
     font-size: ${FONT_SIZE.xxs};
 
-    @media only screen and ${media.md} {
+    ${`@media only screen and ${media.md}`} {
         font-size: ${FONT_SIZE.lg};
     }
 `

@@ -13,7 +13,7 @@ export const NoticesOverlayMenu = styled(DropdownMenu)`
     max-width: 15rem;
     border-right: 0;
 
-    @media only screen and ${media.md} {
+    ${`@media only screen and ${media.md}`} {
         max-width: 25rem;
     }
 `

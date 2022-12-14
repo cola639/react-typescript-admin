@@ -7,7 +7,7 @@ export const Description = styled(Typography.Text)`
     font-size: 0.75rem;
     margin-bottom: 1rem;
 
-    @media only screen and ${media.md} {
+    ${`@media only screen and ${media.md}`} {
         font-size: 1rem;
         margin-bottom: 2rem;
     }

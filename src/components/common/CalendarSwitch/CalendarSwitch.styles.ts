@@ -11,7 +11,7 @@ export const Text = styled(Typography.Text)`
     font-weight: bold;
     font-size: ${FONT_SIZE.xs};
 
-    @media only screen and ${media.md} {
+    ${`@media only screen and ${media.md}`} {
         font-size: ${FONT_SIZE.lg};
     }
 `

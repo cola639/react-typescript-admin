@@ -12,7 +12,7 @@ export const ContentWrapper = styled.div<ContentWrapperProps>`
         !props.isEmptyHistory &&
         `margin: 0 -${defaultPaddings.mobile[1]}px -${defaultPaddings.mobile[0]}px -${defaultPaddings.mobile[1]}px`};
 
-    @media only screen and ${media.md} {
+    ${`@media only screen and ${media.md}`} {
         ${props =>
             !props.isEmptyHistory &&
             `margin: 0 -${defaultPaddings.tablet[1]}px -${defaultPaddings.tablet[0]}px -${defaultPaddings.tablet[1]}px`};
@@ -24,7 +24,7 @@ export const ContentWrapper = styled.div<ContentWrapperProps>`
 `
 
 export const Text = styled(Typography.Text)`
-    @media only screen and ${media.md} {
+    ${`@media only screen and ${media.md}`} {
         font-size: 1rem;
     }
 `
