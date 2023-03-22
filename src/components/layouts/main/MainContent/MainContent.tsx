@@ -19,7 +19,7 @@ export default styled(Content)<HeaderProps>`
         padding: ${LAYOUT.desktop.paddingVertical} ${LAYOUT.desktop.paddingHorizontal};
     }
 
-    @media only screen and ${media.xl} {
+    ${`@media only screen and ${media.xl}`} {
         ${props =>
             props?.$isTwoColumnsLayout &&
             css`
